@@ -11,5 +11,8 @@
         }),
         // Subscribing to the 'flash-comments' Channel
         channel = pusher.subscribe('flash-comments');
+var commentForm = document.getElementById('comment-form');
 
+// Adding to Comment Form Submit Event
+commentForm.addEventListener("submit", addNewComment);
 })();
